@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+//option java_multiple_files = true;
+//option java_package = "io.grpc.examples.routeguide";
+//option java_outer_classname = "RouteGuideProto";
+//option objc_class_prefix = "RTG";
+
+package temp;
+
+service MyMessage {
+    rpc GetPosition (Index) returns (Positions) {}
+    rpc SendPosition (Positions) returns (Index) {}
+}
+
+message Index {
+    int32 index = 1;
+}
+
+message Positions {
+
+    double p1 = 1;
+
+    double j1 = 2;
+
+    double j2 = 3;
+
+    double j3 = 4;
+
+    double j4 = 5;
+
+    double j5 = 6;
+
+    double j6 = 7;
+
+}
